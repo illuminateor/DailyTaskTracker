@@ -11,6 +11,10 @@ class Category extends Model
 {
     use HasUuids;
 
+    protected $fillable = [
+        'name',
+    ];
+
     public function getRouteKeyName(): string
     {
         return 'uuid';
